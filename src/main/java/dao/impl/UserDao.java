@@ -1,4 +1,4 @@
-package impl;
+package dao.impl;
 
 import model.User;
 
