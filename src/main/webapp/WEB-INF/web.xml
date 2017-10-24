@@ -5,6 +5,10 @@
 	id="WebApp_ID" version="2.5">
 
   <display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+   	 <welcome-file>register.html</welcome-file>
+   	 <welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>		
   <servlet>
      <servlet-name>UserLogin</servlet-name>
      <servlet-class></servlet-class>
@@ -16,11 +20,11 @@
  <!-- url拦截 -->
  <servlet>
     <servlet-name>UserRegister</servlet-name>
-    <servlet-class></servlet-class>
+    <servlet-class>Servlet.register</servlet-class>
 </servlet>
  
 <servlet-mapping>
-    <servlet-name>servlet1</servlet-name>
-    <url-pattern>*.do</url-pattern>
+    <servlet-name>UserRegister</servlet-name>
+    <url-pattern>/UserRegister</url-pattern>
 </servlet-mapping>
 </web-app>

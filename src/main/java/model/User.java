@@ -7,7 +7,8 @@ public class User {
 	private String age;
 	//邮箱
 	private String emailAddress;
-	//
+	//密码
+	private String password;
 	
 	public String getName() {
 		return name;
@@ -26,6 +27,12 @@ public class User {
 	}
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }
 
