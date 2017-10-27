@@ -20,6 +20,7 @@ public class register extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		super.doPost(req, resp);
+		//
 		resp.setContentType("text/html;charset=utf-8");
 		req.setCharacterEncoding("utf-8");
 		//获取用户注册信息
@@ -28,6 +29,8 @@ public class register extends HttpServlet {
 		String gender=req.getParameter("gender");
 		String email=req.getParameter("email");
 		String password=req.getParameter("password");
+		//
+		System.out.println("================"+username);
 		//
 		if (username!=null) {
 			User user=new User();

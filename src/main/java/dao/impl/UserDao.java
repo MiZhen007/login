@@ -14,19 +14,21 @@ public class UserDao implements dao.UserDao {
 		//获取数据库连接
 		Connection connection=dbUtil.getConnect();
 		//创建注册用户信息的sql语句
-		String sql="insert into user(username,age,email,password) values(?,?,?,?)";
+		String sql="insert into user(name,email,password) values(?,?,?)";
+		//
+		System.out.println("================================"+sql+user.getName()+"\n"+user.getEmailAddress()+"\n"+user.getPassword()+user.getAge());
 		try {
 			PreparedStatement pStatement=connection.prepareStatement(sql);
 			pStatement.setString(1, user.getName());
-			pStatement.setString(2, user.getAge());
-			pStatement.setString(3, user.getEmailAddress());
-			pStatement.setString(4, user.getPassword());
+			pStatement.setString(2, user.getEmailAddress());
+			pStatement.setString(3, user.getPassword());
 			//执行操作
 			pStatement.executeUpdate();
 			//释放资源
 			pStatement.close();
 		} catch (Exception e) {
 			// TODO: handle exception
+			System.out.println("-----------error---------");
 			e.printStackTrace();
 		}
 		

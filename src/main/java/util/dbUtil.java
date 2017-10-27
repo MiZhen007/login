@@ -17,9 +17,9 @@ public class dbUtil {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String url = "jdbc:mysql://localhost:3306/jdbcdemo?useUnicode=true&characterEncoding=UTF-8";
+        String url = "jdbc:mysql://localhost:3306/login?useUnicode=true&characterEncoding=UTF-8";
         try {
-        		conn=DriverManager.getConnection(url, "root", "xxxx");
+        		conn=DriverManager.getConnection(url, "root", "SQL1127");
             if (conn != null) {
                 System.out.println("connect init successfully!");
             }
