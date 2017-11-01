@@ -19,7 +19,7 @@ public class dbUtil {
         }
         String url = "jdbc:mysql://localhost:3306/login?useUnicode=true&characterEncoding=UTF-8";
         try {
-        		conn=DriverManager.getConnection(url, "root", "SQL1127");
+        		conn=DriverManager.getConnection(url, "root", "MZSQL1127");
             if (conn != null) {
                 System.out.println("connect init successfully!");
             }

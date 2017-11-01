@@ -49,7 +49,7 @@ public class register extends HttpServlet {
 			req.setAttribute("msg", "用户名不嗯能够为空");
 		}
 		//转发
-		req.getRequestDispatcher("msg.jsp").forward(req, resp);
+		req.getRequestDispatcher("index.jsp").forward(req, resp);
 	}
 }
 
